@@ -6,21 +6,6 @@ A Docker-based tool for building Python Lambda layers with the correct Linux dep
 
 Creates AWS Lambda layers containing Python packages that are properly compiled for the AWS Lambda runtime environment (Linux x86_64). Ensures binary dependencies work correctly when deployed to Lambda, regardless of your local development machine's architecture.
 
-## Getting Started
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/ffcloud-force/create-lambda-layer.git
-cd create-lambda-layer
-```
-
-### 2. Make the Script Executable
-
-```bash
-chmod +x create_layer.sh
-```
-
 ## Prerequisites
 
 - Docker installed and running
@@ -38,7 +23,15 @@ lambda_layer/
 
 ## Quick Start
 
-### 1. Configure Your Layer
+### 1. Get the Code
+
+```bash
+git clone https://github.com/ffcloud-force/create-lambda-layer.git
+cd create-lambda-layer
+chmod +x create_layer.sh
+```
+
+### 2. Configure Your Layer
 
 **Set Python Version** (in `Dockerfile`, line 1):
 ```dockerfile
